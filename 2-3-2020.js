@@ -18,3 +18,12 @@ function toArray(obj) {
     }
     return newArray;
 }
+
+function toArray(obj) {
+	return Object.entries(obj);
+}
+
+function toArray(obj) {
+	return Object.keys(obj).map(x => [x, obj[x]]);
+}
+
