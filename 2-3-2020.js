@@ -11,3 +11,10 @@ toArray({}) ➞ []
 Notes
 Return an empty array if the object is empty. */
 
+function toArray(obj) {
+    let newArray = [];
+    for( let [key, value] of Object.entries(obj)) {
+        newArray.push([key,value]);
+    }
+    return newArray;
+}
